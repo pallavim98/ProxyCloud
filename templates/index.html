@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="static/sheet.css">
+	<!-- The link tag defines a link between a html document and an external style sheet-->
+  	<link rel = "stylesheet" href = "static/style.css" type = "text/css" />
+  	<!-- The viewport is the user's visible area of a website-->
+  	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	
+	<title>form</title>
+</head>
+<body class="body">
+
+	<header class = "mainHeader" >
+    <!-- The nav tag defines the navigation bar -->
+    <!-- The ul tag defines the unordered lists -->
+    <nav><ul>
+    	<img src="static/logo.png" style="float:left; height:60px;">
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "{{ url_for('about') }}">About</a></li>
+      <li><a href = "{{ url_for('howitworks') }}">How It Works</a></li>
+    </ul></nav>
+   	</header>
+
+	<center>
+		<div class="button_box2">
+			<form class="form-wrapper-2 cf" method = "POST" action = "/">
+				<input type="text" placeholder="Search url..." name = "url">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</center>
+
+</body>
+</html>
+
+
+
+
